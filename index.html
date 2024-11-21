@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- css link -->
+    <link rel="stylesheet" href="./css-files/style.css">
+     <!-- icons link -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <title>Music Player</title>
+</head>
+<body>
+    
+<div class="container">
+    <div class="music-player">
+        <nav>
+            <div class="circle">
+                <i class='bx bxs-left-arrow'></i>
+            </div>
+
+            <div class="circle">
+                <i class='bx bx-menu'></i>
+            </div>
+
+        </nav>
+        <img src="./img/468-thumbnail.png" alt="song-img" class="song-img">
+        <h1>Despacito</h1>
+        <p>Luis Fonsi Ft. Puerto Rican</p>
+
+        <audio id="song">
+            <source src="./audio/Under The Sun - Everet Almond.mp3" type="audio/mpeg">
+        </audio> 
+        <input type="range" value="0" id="progress">
+
+        <div class="controls">
+            <div><i class='bx bxs-chevrons-left'></i></div>
+            <div onclick="playPause()"><i class='bx bxs-right-arrow' id="play"></i></div>
+            <div><i class='bx bxs-chevrons-right' ></i></div>
+
+        </div>
+    </div>
+</div>
+
+
+
+
+
+    <script src="./js-files/script.js"></script>
+</body>
+</html>
